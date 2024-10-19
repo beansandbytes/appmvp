@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airport Valet Parking Booking</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong><img src="https://www.airportparking.ch/gfx/logos/airportparking.png"></strong></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <nav aria-label="Progress">
+      <ol class="progress-bar">
+        <li class="current" data-step="1"><a href="#">Flight Details</a></li>
+        <li data-step="2"><a href="modify.html">Time Slots</a></li>
+        <li data-step="3"><a href="review.html">Review</a></li>
+        <li data-step="4"><a href="payment.html">Payment</a></li>
+        <li data-step="5"><a href="#">Confirmation</a></li>
+      </ol>
+    </nav>
+    <h1>Book Your Parking</h1>
+    <form id="flight-details-form">
+      <fieldset>
+        <legend>Departure Flight Details</legend>
+        <label for="departure-date">Departure Date</label>
+        <input type="date" id="departure-date" name="departure-date" required>
+
+        <label for="departure-flight-number">Flight Number</label>
+        <input type="text" id="departure-flight-number" name="departure-flight-number" placeholder="e.g., AA123" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Return Flight Details</legend>
+        <label for="return-date">Return Date</label>
+        <input type="date" id="return-date" name="return-date" required>
+
+        <label for="return-flight-number">Flight Number</label>
+        <input type="text" id="return-flight-number" name="return-flight-number" placeholder="e.g., AA456" required>
+      </fieldset>
+
+      <a class="full" role="button" href="time.html">Next</a>
+    </form>
+  </main>
+
+  <footer class="container">
+    <small>&copy; 2024 by Airportparking (Schweiz) AG</small>
+  </footer>
+</body>
+</html>

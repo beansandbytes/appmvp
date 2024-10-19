@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airport Valet Parking Booking</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong><img src="https://www.airportparking.ch/gfx/logos/airportparking.png"></strong></li>
+      </ul>
+    </nav>
+  </header>
+<main class="container">
+  <nav aria-label="Progress">
+    <ol class="progress-bar">
+      <li class="completed" data-step="1"><a href="index.html">Flight Details</a></li>
+      <li class="current" data-step="2"><a href="#">Time Slots</a></li>
+      <li data-step="3"><a href="#">Review</a></li>
+      <li data-step="4"><a href="#">Payment</a></li>
+      <li data-step="5"><a href="#">Confirmation</a></li>
+    </ol>
+  </nav>
+  <h2>Select Your Preferred Time Slots</h2>
+  <form id="slot-selection-form">
+    <fieldset>
+      <legend>Drop-Off Slot</legend>
+      <label for="dropoff-time">Choose a Time</label>
+      <select id="dropoff-time" name="dropoff-time" required>
+        <option value="7:30-8:00">$20 - 7:30 AM - 8:00 AM</option>
+        <option value="8:00-8:30" selected>$25 - 8:00 AM - 8:30 AM (High Demand)</option>
+        <option value="8:30-9:00">$20 - 8:30 AM - 9:00 AM</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pick-Up Slot</legend>
+      <label for="pickup-time">Choose a Time</label>
+      <select id="pickup-time" name="pickup-time" required>
+        <option value="5:30-6:00">$20 - 5:30 PM - 6:00 PM</option>
+        <option value="6:00-6:30" selected>$25 - 6:00 PM - 6:30 PM (High Demand)</option>
+        <option value="6:30-7:00">$20 - 6:30 PM - 7:00 PM</option>
+      </select>
+    </fieldset>
+
+    <section>
+      <h3>Pricing Summary</h3>
+      <p>Drop-Off Slot: <strong>$25</strong></p>
+      <p>Pick-Up Slot: <strong>$25</strong></p>
+      <p>Total: <strong>$50</strong></p>
+    </section>
+
+    <p><a href="review.html" class="full" role="button">Next</a></p>
+  </form>
+</main>
+
+
+  <footer class="container">
+    <small>&copy; 2024 by Airportparking (Schweiz) AG</small>
+  </footer>
+</body>
+</html>

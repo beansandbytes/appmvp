@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airport Valet Parking Booking</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong><img src="https://www.airportparking.ch/gfx/logos/airportparking.png"></strong></li>
+      </ul>
+    </nav>
+  </header>
+<main class="container">
+  <nav aria-label="Progress">
+    <ol class="progress-bar">
+      <li class="completed" data-step="1"><a href="index.html">Flight Details</a></li>
+      <li class="current" data-step="2"><a href="modify.html">Time Slots</a></li>
+      <li data-step="3"><a href="review.html">Review</a></li>
+      <li data-step="4"><a href="payment.html">Payment</a></li>
+      <li data-step="5"><a href="#">Confirmation</a></li>
+    </ol>
+  </nav>
+  <h2>Recommended Time Slots</h2>
+  <section>
+    <h3>Drop-Off Time</h3>
+    <p>Based on your departure flight, we recommend dropping off your car between <strong>8:00 AM - 8:30 AM</strong> on <strong>November 15, 2024</strong>.</p>
+
+    <h3>Pick-Up Time</h3>
+    <p>For your return flight, we recommend picking up your car between <strong>6:00 PM - 6:30 PM</strong> on <strong>November 20, 2024</strong>.</p>
+  </section>
+
+  <form id="time-slot-form">
+		<p>
+			<a href="review.html" role="button" class="full">Accept Recommendations</a>
+		</p>
+    <a href="modify.html" role="button" class="full secondary">Modify Times</a>
+  </form>
+</main>
+
+  <footer class="container">
+    <small>&copy; 2024 by Airportparking (Schweiz) AG</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airport Valet Parking Booking</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong><img src="https://www.airportparking.ch/gfx/logos/airportparking.png"></strong></li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="container">
+  <nav aria-label="Progress">
+    <ol class="progress-bar">
+      <li class="completed" data-step="1"><a href="index.html">Flight Details</a></li>
+      <li class="completed" data-step="2"><a href="modify.html">Time Slots</a></li>
+      <li class="current" data-step="3"><a href="#">Review</a></li>
+      <li data-step="4"><a href="#">Payment</a></li>
+      <li data-step="5"><a href="#">Confirmation</a></li>
+    </ol>
+  </nav>
+  <h2>Review Your Booking</h2>
+  <section>
+    <h3>Flight Details</h3>
+    <p>Departure Flight: <strong>AA123</strong> on <strong>November 15, 2024</strong></p>
+    <p>Return Flight: <strong>AA456</strong> on <strong>November 20, 2024</strong></p>
+  </section>
+
+  <section>
+    <h3>Time Slots</h3>
+    <p>Drop-Off: <strong>8:00 AM - 8:30 AM</strong></p>
+    <p>Pick-Up: <strong>6:00 PM - 6:30 PM</strong></p>
+  </section>
+
+  <section>
+    <h3>Pricing Summary</h3>
+    <p>Total: <strong>$50</strong></p>
+  </section>
+
+		<p>
+    <a role="button" class="full" href="payment.html">Confirm and Pay</a>
+</p>
+
+    <p><a href="modify.html" role="button" class="full secondary">Modify Times</a></p>
+  </form>
+</main>
+
+  <footer class="container">
+    <small>&copy; 2024 by Airportparking (Schweiz) AG</small>
+  </footer>
+</body>
+</html>

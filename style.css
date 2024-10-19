@@ -1,0 +1,75 @@
+form {
+	max-width: 600px;
+	margin: auto;
+}
+button[type="submit"] {
+	width: 100%;
+}
+button {
+	width: 100%;
+}
+
+.full {
+	width: 100%;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.progress-bar li {
+  flex: 1;
+  text-align: center;
+	vertical-align: top;
+  position: relative;
+  top: 10%;
+}
+
+.progress-bar li:not(:last-child)::after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress-bar li.completed::after,
+.progress-bar li.current::after {
+}
+
+.progress-bar li a {
+  display: inline-block;
+  padding: 0.5em;
+  color: var(--progress-bar-text-color, #666);
+  text-decoration: none;
+}
+
+.progress-bar li.completed a,
+.progress-bar li.current a {
+  color: var(--progress-bar-active-text-color, #007bff);
+  font-weight: bold;
+}
+
+.progress-bar li::before {
+  content: attr(data-step);
+  display: block;
+  margin: 0 auto 0.5em;
+  background: var(--progress-bar-circle-bg, #ccc);
+  color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 50%;
+}
+
+.progress-bar li.completed::before,
+.progress-bar li.current::before {
+  background: var(--progress-bar-active-circle-bg, #007bff);
+}

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airport Valet Parking Booking</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong><img src="https://www.airportparking.ch/gfx/logos/airportparking.png"></strong></li>
+      </ul>
+    </nav>
+  </header>
+<main class="container">
+  <nav aria-label="Progress">
+    <ol class="progress-bar">
+      <li class="completed" data-step="1"><a href="index.html">Flight Details</a></li>
+      <li class="completed" data-step="2"><a href="modify.html">Time Slots</a></li>
+      <li class="completed" data-step="3"><a href="review.html">Review</a></li>
+      <li class="completed" data-step="4"><a href="payment.html">Payment</a></li>
+      <li class="current" data-step="5"><a href="#">Confirmation</a></li>
+    </ol>
+  </nav>
+  <h2>Booking Confirmed!</h2>
+  <section>
+    <p>Thank you, <strong>John Doe</strong>. Your booking reference number is <strong>ABC12345</strong>.</p>
+    <h3>Booking Details</h3>
+    <ul>
+      <li>Departure Flight: AA123 on November 15, 2024</li>
+      <li>Return Flight: AA456 on November 20, 2024</li>
+      <li>Drop-Off Time Slot: 8:00 AM - 8:30 AM</li>
+      <li>Pick-Up Time Slot: 6:00 PM - 6:30 PM</li>
+      <li>Total Paid: $50</li>
+    </ul>
+    <h3>Instructions</h3>
+    <p>Please drop off your car at <strong>Parking Garage Level 2, Section B</strong>. Use the lockbox number provided in your confirmation email to drop off and pick up your keys.</p>
+    <p>Safe travels!</p>
+  </section>
+
+  <a href="index.html" role="button" class="full">Return to Home</a>
+</main>
+
+
+  <footer class="container">
+    <small>&copy; 2024 by Airportparking (Schweiz) AG</small>
+  </footer>
+</body>
+</html>
