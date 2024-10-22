@@ -73,3 +73,60 @@ button {
 .progress-bar li.current::before {
   background: var(--progress-bar-active-circle-bg, #007bff);
 }
+
+/* Custom Styles for Chat Interface */
+#chat-container {
+	max-width: 600px;
+	margin: auto;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 1em;
+}
+
+#chat-log {
+	height: 300px;
+	overflow-y: auto;
+	border: 1px solid #ddd;
+	padding: 1em;
+	background-color: #f9f9f9;
+	margin-bottom: 1em;
+}
+
+.chat-message {
+	margin-bottom: 1em;
+}
+
+.user-message {
+	text-align: right;
+}
+
+.bot-message {
+	text-align: left;
+}
+
+#chat-input {
+}
+
+#chat-input input[type="text"] {
+	margin-right: 0.5em;
+  margin-bottom: 0.5em
+}
+
+/* Custom Styles for FAQ */
+details {
+	margin-bottom: 1em;
+}
+
+summary {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* Optional: Style categories */
+.faq-category {
+	margin-bottom: 2em;
+}
+
+.faq-category h2 {
+	margin-top: 2em;
+}

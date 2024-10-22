@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support - Airport Valet Parking</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong><img src="https://www.airportparking.ch/gfx/logos/airportparking.png"></strong></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Support</h1>
+    <p>How can we assist you today? Chat with our virtual assistant below.</p>
+
+    <section id="chat-container">
+      <div id="chat-log" aria-live="polite" aria-label="Chat Log">
+        <!-- Chat messages will appear here -->
+      </div>
+
+      <form id="chat-form" role="search" aria-label="Chat Input">
+        <div id="chat-input">
+          <label for="message" class="visually-hidden">Your Message</label>
+          <input type="text" id="message" name="message" placeholder="Type your message..." autocomplete="off" required>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>&copy; 2024 by Airportparking (Schweiz) AG</small>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
